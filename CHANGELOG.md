@@ -1,3 +1,12 @@
+## [0.9.1](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.0...v0.9.1) (2024-08-11)
+
+
+### Bug Fixes
+
+* **readme:** Updated readme to trigger fix release for 0.9.x ([5d30adb](https://github.com/thomaswinkler/cumulocity-cypress/commit/5d30adb9dcbe1916a4dc772799e239928b7672f5))
+* **release:** Enabled release branches in workflow ([bd12792](https://github.com/thomaswinkler/cumulocity-cypress/commit/bd127929040fd95fbccb19d4863f17f8cde8f32f))
+* **release:** Switching order of branches to test if its working ([31af623](https://github.com/thomaswinkler/cumulocity-cypress/commit/31af6239fb5d553cfc1a519e8c87a8e9526fa6bc))
+
 # [0.9.0](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.8.0...v0.9.0) (2024-08-11)
 
 
