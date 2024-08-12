@@ -1,3 +1,10 @@
+## [0.9.8](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.7...v0.9.8) (2024-08-12)
+
+
+### Bug Fixes
+
+* **release:** Set maintenance release channel ([3b54d21](https://github.com/thomaswinkler/cumulocity-cypress/commit/3b54d21d4f6b3a4357cf5b98d00c3506e994bbbd))
+
 ## [0.9.7](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.6...v0.9.7) (2024-08-12)
 
 
