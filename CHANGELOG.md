@@ -1,3 +1,10 @@
+## [0.9.9](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.8...v0.9.9) (2024-08-12)
+
+
+### Bug Fixes
+
+* **release:** Configure npm tag ([8b903fb](https://github.com/thomaswinkler/cumulocity-cypress/commit/8b903fb3e32e1f118ea19fd5fb72af0f1a35182f))
+
 ## [0.9.8](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.7...v0.9.8) (2024-08-12)
 
 
