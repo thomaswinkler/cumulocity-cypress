@@ -3,7 +3,6 @@ module.exports = {
     {
       name: "release/v+([0-9])?(.{+([0-9]),x}).x",
       range: "${name.replace(/^release\\/v/g, '')}",
-      channel: "${name.replace(/^release\\//g, '')}",
     },
     "main",
   ],
@@ -37,6 +36,7 @@ module.exports = {
         npmPublish: true,
         pkgRoot: "dist/",
         tarballDir: "./",
+        tag: "${nextRelease.channel.replace(/^release\\//g, '')}",
       },
     ],
     [
