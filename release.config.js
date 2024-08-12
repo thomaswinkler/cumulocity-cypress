@@ -1,29 +1,27 @@
-// /* eslint-disable @typescript-eslint/no-var-requires */
-// const { readFileSync } = require("fs");
-// const { join } = require("path");
-
 module.exports = {
   branches: [
     {
       name: "release/v+([0-9])?(.{+([0-9]),x}).x",
-      prerelease: false,
-      channel: "maintenance",
+      range: "${name.replace(/^release\\/v/g, '')}",
     },
     "main",
   ],
   plugins: [
-    "@semantic-release/commit-analyzer",
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        preset: "angular",
+        releaseRules: [
+          { breaking: true, release: "major" },
+          { revert: true, release: "patch" },
+          { type: "feat", release: "minor" },
+          { type: "fix", release: "patch" },
+          { type: "chore", release: "patch" },
+          { type: "docs", release: "patch" },
+        ],
+      },
+    ],
     "@semantic-release/release-notes-generator",
-    // [
-    //   {
-    //     writerOpts: {
-    //       commitPartial: readFileSync(
-    //         join(__dirname, ".github/commit.hbs"),
-    //         "utf-8"
-    //       ),
-    //     },
-    //   },
-    // ],
     "@semantic-release/changelog",
     [
       "@semantic-release/exec",
