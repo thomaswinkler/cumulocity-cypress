@@ -36,7 +36,7 @@ module.exports = {
         npmPublish: true,
         pkgRoot: "dist/",
         tarballDir: "./",
-        tag: "${nextRelease.channel}",
+        tag: "${nextRelease.channel.replace(/^release\\/v/g, '')}",
       },
     ],
     [
