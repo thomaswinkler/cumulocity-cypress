@@ -1,3 +1,10 @@
+## [0.9.7](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.6...v0.9.7) (2024-08-12)
+
+
+### Bug Fixes
+
+* **release:** Test maintenance 3 ([249b2bf](https://github.com/thomaswinkler/cumulocity-cypress/commit/249b2bf9e55c69d18a5483d73b1a1611fc7661ea))
+
 ## [0.9.6](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.5...v0.9.6) (2024-08-12)
 
 
