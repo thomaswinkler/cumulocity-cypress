@@ -40,19 +40,19 @@ module.exports = {
         tarballDir: "./",
       },
     ],
-    // [
-    //   "@semantic-release/github",
-    //   {
-    //     assets: [{ path: "*.tgz", label: "Package (.tgz)" }],
-    //   },
-    // ],
-    // [
-    //   "@semantic-release/git",
-    //   {
-    //     assets: ["package.json", "packages/*/package.json", "CHANGELOG.md"],
-    //     message:
-    //       "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
-    //   },
-    // ],
+    [
+      "@semantic-release/github",
+      {
+        assets: [{ path: "*.tgz", label: "Package (.tgz)" }],
+      },
+    ],
+    [
+      "@semantic-release/git",
+      {
+        assets: ["package.json", "packages/*/package.json", "CHANGELOG.md"],
+        message:
+          "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+      },
+    ],
   ],
 };
