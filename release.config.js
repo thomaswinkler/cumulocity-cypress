@@ -3,6 +3,7 @@ module.exports = {
     {
       name: "release/v+([0-9])?(.{+([0-9]),x}).x",
       range: "${name.replace(/^release\\/v/g, '')}",
+      channel: "v0-lts",
     },
     "main",
   ],
