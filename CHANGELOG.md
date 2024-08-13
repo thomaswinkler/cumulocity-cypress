@@ -1,3 +1,10 @@
+## [0.9.16](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.15...v0.9.16) (2024-08-13)
+
+
+### Bug Fixes
+
+* **release:** Testing non-semver range channel as tag ([5d5fd59](https://github.com/thomaswinkler/cumulocity-cypress/commit/5d5fd5979a1af53b09e9250f0354d45f4fb36feb))
+
 ## [0.9.15](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.14...v0.9.15) (2024-08-13)
 
 
