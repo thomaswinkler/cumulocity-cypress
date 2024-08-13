@@ -1,3 +1,10 @@
+## [0.9.14](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.13...v0.9.14) (2024-08-13)
+
+
+### Bug Fixes
+
+* **release:** Testing tag again with npmrc file ([5feded9](https://github.com/thomaswinkler/cumulocity-cypress/commit/5feded94d1530ceead209571c6095370ccea3329))
+
 ## [0.9.13](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.12...v0.9.13) (2024-08-12)
 
 
