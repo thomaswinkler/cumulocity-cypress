@@ -1,3 +1,10 @@
+## [0.9.17](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.16...v0.9.17) (2024-08-13)
+
+
+### Bug Fixes
+
+* **release:** Testing channel that translates to v0-lts ([1299feb](https://github.com/thomaswinkler/cumulocity-cypress/commit/1299febf6823182d7863605db6512b73602126d6))
+
 ## [0.9.16](https://github.com/thomaswinkler/cumulocity-cypress/compare/v0.9.15...v0.9.16) (2024-08-13)
 
 
