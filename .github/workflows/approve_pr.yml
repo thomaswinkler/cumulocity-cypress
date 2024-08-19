@@ -18,12 +18,13 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
+            const github = require('@actions/github');
             const { GITHUB_TOKEN } = process.env;
             const octokit = github.getOctokit(GITHUB_TOKEN);
-            const pull_number = github.event.issue.number;
+            const pull_number = github.context.issue.number;
             await octokit.pulls.createReview({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
               pull_number: pull_number,
               event: 'APPROVE'
             });
