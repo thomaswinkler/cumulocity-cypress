@@ -14,18 +14,15 @@ jobs:
         run: echo "Comment is approved"
 
       - name: Approve the pull request
-        if: ${{ github.event.comment.body == 'approved' && (github.event.comment.user.login == 'twisag' || contains(github.event.comment.user.login, github.repository_owner)) }}
+        if: ${{ github.event.comment.body == 'approved' && (github.event.comment.user.login == 'thomaswinkler' || contains(github.event.comment.user.login, github.repository_owner)) }}
         uses: actions/github-script@v6
         with:
           script: |
-            const { GITHUB_TOKEN } = process.env;
-            const octokit = require('@actions/github').getOctokit(GITHUB_TOKEN);
-            const pull_number = context.issue.number;
-            await octokit.pulls.createReview({
+            github.rest.issues.createReview({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              pull_number: pull_number,
+              pull_number: context.issue.number,
               event: 'APPROVE'
-            });
+            })
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
